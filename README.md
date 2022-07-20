@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+React Swiss Army Knife (RSAK) or React Army Knife (RAK) is an all-in-one bundle of resources for front-end development. It's a balance between having a bunch of class names with CSS presets and writing your styling from scratch. The idea is for it to be completely personalized, but generic enough for you to use in most cases so you don't have to write so many custom components.
+
+You can find stripped down custom components that are used in lots of website templates and can personalize them to your own touch. The Sass template allows you to just plug-in the values for your website's standards. The custom hooks are often found in multiple scenarios and can serve as a way to clean up your code.
