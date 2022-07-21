@@ -1,0 +1,8 @@
+@function createFontSizes($default, $small, $big, $unit: vw) {
+	$font-sizes: (
+		default: $default + $unit,
+		small: $small,
+		big: $big,
+	);
+	@return $font-sizes;
+}

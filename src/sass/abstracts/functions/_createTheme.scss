@@ -1,0 +1,22 @@
+@use "sass:list";
+
+@function createTheme(
+	$primary-color,
+	$secondary-color,
+	$offset-primary,
+	$offset-secondary,
+	$nav-colors
+) {
+	$theme-values: (
+		primary-color: $primary-color,
+		secondary-color: $secondary-color,
+		offset-primary: $offset-primary,
+		offset-secondary: $offset-secondary,
+		nav-colors: (
+			nav-background: list.nth($nav-colors, 1),
+			nav-text: list.nth($nav-colors, 2),
+			nav-hover: list.nth($nav-colors, 3),
+		),
+	);
+	@return $theme-values;
+}

@@ -1,0 +1,19 @@
+@use "sass:map";
+
+@mixin apply-themes() {
+	@each $theme-name, $theme-map in var.$themes {
+		$theme-name: $theme-name; /*map-get($theme-map, "theme-name") !global;*/
+		$nav-map: map-get($theme-map, "nav-colors");
+		$primary-color: map-get($theme-map, "primary-color") !global;
+		$secondary-color: map-get($theme-map, "secondary-color") !global;
+		$offset-primary: map-get($theme-map, "offset-primary") !global;
+		$offset-secondary: map-get($theme-map, "offset-secondary") !global;
+		$nav-background: map-get($nav-map, "nav-background") !global;
+		$nav-text: map-get($nav-map, "nav-text") !global;
+		$nav-hover: map-get($nav-map, "nav-hover") !global;
+
+		.#{$theme-name}-theme {
+			@content;
+		}
+	}
+}
