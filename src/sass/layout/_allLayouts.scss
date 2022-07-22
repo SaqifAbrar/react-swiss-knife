@@ -1,7 +1,15 @@
 .layout-container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
 }
 
-.sidebar-main-format {
+.sidebar-content-format {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
+	overflow: hidden;
+
+	div:last-child {
+		overflow-y: scroll;
+	}
 }

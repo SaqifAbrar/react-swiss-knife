@@ -4,9 +4,9 @@ import "./sass/main.scss";
 function App() {
 	return (
 		<div className="App">
-			<Layout format="sidebar-main">
+			<Layout format="sidebar-content">
 				<div className="sidebar">sidebar</div>
-				<div className="main-content">
+				<div className="content">
 					<div className="test-content">test-content</div>
 				</div>
 			</Layout>
